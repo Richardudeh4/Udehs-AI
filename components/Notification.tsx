@@ -17,6 +17,7 @@ const Notification = () => {
     });
 
     // Request Notification Permission
+    //@ts-ignore
     const permission = await Notification.requestPermission();
     if (permission !== 'granted') {
       throw new Error('Permission not granted for Notification');
